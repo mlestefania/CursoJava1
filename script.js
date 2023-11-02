@@ -1,44 +1,108 @@
 /*
 let js = 'amazing';
-if (js == 'amazing') alert('Javascript is FUN');
-console.log(40 + 8 + 3);
+console.log(40 - +8 + 23);
+
+console.log('Laura');
+let firstName = 'Laura'
+let firstNamePerson = 'Maria Laura'
+
+console.log(firstName)
+console.log(firstName)
+console.log(firstName)
+
+let PI = 3.14159
+
+let myFirstJob = 'Programmer'
+let myActualJob 
+
+let age = 30;
+
+age = 31;
+
+const birthYear = 1991;
+
+var job = 'progammer'; // no usar
+job = 'teacher';
+
+const now = 2023;
+const ageLaura = now - 1966;
+const ageDiego = now - 1962;
+console.log(ageLaura, ageDiego);
+
+console.log(ageLaura * 2);
+console.log(ageLaura, ageDiego / 10, 2 ** 3);
+
+const firstName = 'Maria';
+const lastName = 'Estefania';
+console.log(firstName + ' ' + lastName);
+let x = 10 + 5;
+x += 10;
+x *= 4;
+x++;
+x--;
+x--;
+console.log(x);
+
+// Comparacion de elementos
+console.log(ageLaura > ageDiego);
+console.log(ageLaura >= 57)
+
+const isFullAge = ageLaura > 15;
+console.log((now - 1991) > (now - 2019))
 
 
-let PI = 3.14
-let jonasMatilda = 'JM';
-console.log(true);
+const firstName = 'laura';
+const jobLaura = 'tester';
+const nacimiento = 1966;
+const actualYear = 2023;
 
-let javascriptIsFun = true;
-console.log(javascriptIsFun); */
-// console.log(typeof 23);
-// console.log(typeof 'jonas');
-// console.log(typeof true);
+let laura = "I'm " + firstName + ', a ' + (actualYear - nacimiento) + "years old " + jobLaura;
 
+console.log(laura)
 
-javascriptIsFun = 'YES';
-console.log(typeof javascriptIsFun);
+const jonasNew = `I am ${firstName} a  ${actualYear - nacimiento}`;
+console.log(jonasNew)
 
-let year;
-console.log(year);
-console.log(typeof year);
-year = 1991;
-console.log(typeof year);
+console.log(`Strin with \n\
+multime \n\
+line`)
+*/
 
-console.log(typeof null);
+const age = 15;
 
-const now = 2027;
-const ageJonas = now - 1991;
-const ageSarah = now - 2018;
+if (age >= 18) {
+    console.log('Sarah puede manejar')
+} else {
+    const yearsLeft = 18 - age;
+    console.log(`Sara es muy joven. le faltan ${yearsLeft} years`)
+}
 
-console.log(now - 1991 > now - 2018);
-console.log(25 - 10 - 5);
-console.log(25 - 5 - 10);
+const birthYear = 2012;
 
-let x, y;
+let century;
+if (birthYear <= 2000) {
+    century = 20;
 
-x = y = 25 - 10 - 5;
+} else {
+    century = 21;
+}
 
-console.log(x, y);
+console.log(century);
+// type conversion
+const inputYear = '1991';
+console.log(Number(inputYear), inputYear);
+console.log(Number(inputYear) + 19);
 
-const averageAge = (ageJonas + ageSarah) / 2
-console.log(ageJonas, ageSarah, averageAge);
+console.log(Number('Jonas'));
+console.log(typeof NaN);
+console.log(String(23), 23);
+
+// type coercion
+
+console.log('I am ' + 23 + ' years old');
+console.log('23' + '10' + '3')
+console.log('23' / '2')
+
+let n = '1' + 1 // 11
+n = n - 1
+console.log(n)
