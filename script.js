@@ -66,7 +66,7 @@ console.log(jonasNew)
 console.log(`Strin with \n\
 multime \n\
 line`)
-
+*/
 
 const age = 15;
 
@@ -104,46 +104,52 @@ console.log('23' + '10' + '3')
 console.log('23' / '2')
 
 let n = '1' + 1 // 11
-n = n - 1
+n = n - 1 + 1
 console.log(n);
-*/
 
-console.log(Boolean(0));
-console.log(Boolean(undefined));
-console.log(Boolean('Jonas'));
-console.log(Boolean(''));
+const hasDriversLicense = true;
+const hasGoodVision = true;
 
-const money = 100;
+console.log(hasDriversLicense && hasGoodVision);
+console.log(hasDriversLicense || hasGoodVision);
 
-if (money) {
-    console.log('No lo gastes todo')
+const shouldDrive = hasDriversLicense && hasGoodVision;
+
+//if (shouldDrive && hasGoodVision) {
+//console.log('Sarah is able to drive');
+//else {
+//  console.log('Someone else should drive ...')
+//
+
+const isTired = false;
+
+console.log(shouldDrive && hasGoodVision || isTired)
+
+if (shouldDrive && hasGoodVision && !isTired) {
+    console.log('Sarah is able to drive');
 } else {
-    console.log('no tenes trabajo')
+    console.log('Someone else should drive ...')
 }
-
-let height = 0;
-if (height) {
-    console.log('si la variable esta definida')
-} else {
-    console.log('no esta definida')
+const day = 'yy';
+switch (day) {
+    case 'monday':
+        console.log('Plan my course structure');
+        console.log('Go to coding meet up');
+        break;
+    case 'tuesday':
+        console.log('prepare videos');
+        break;
+    case 'wednesday':
+    case 'thursday':
+        console.log('write code');
+        break;
+    case 'friday':
+        console.log('record videos');
+        break;
+    case 'saturday':
+    case 'sunday':
+        console.log('Weekend');
+        break;
+    default:
+        console.log('Not es un dia valido');
 }
-
-const age = 18;
-if (age === 18) console.log('Tiene 18')
-
-const favourite = Number(prompt("cual es tu numero favorito"));
-console.log(typeof favourite)
-
-if (favourite === 23) {
-    console.log('23 es e mejor numero')
-} else if (favourite == 24) {
-    console.log('24 es el mejor')
-} else {
-    console.log('cualquier numero')
-}
-
-if (favourite !== 23) console.log('es 23');
-else {
-    console.log('ahora si es 23')
-}
-
