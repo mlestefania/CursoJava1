@@ -130,7 +130,7 @@ if (shouldDrive && hasGoodVision && !isTired) {
 } else {
     console.log('Someone else should drive ...')
 }
-const day = 'yy';
+const day = 'sunday';
 switch (day) {
     case 'monday':
         console.log('Plan my course structure');
