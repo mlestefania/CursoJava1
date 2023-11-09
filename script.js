@@ -153,3 +153,5 @@ switch (day) {
     default:
         console.log('Not es un dia valido');
 }
+
+day === 'saturday' || day === 'sunday' ? console.log('Es fin de semana') : console.log('Es dia laborable');
